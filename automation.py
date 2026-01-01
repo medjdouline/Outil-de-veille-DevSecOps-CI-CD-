@@ -91,7 +91,7 @@ class AutomationSystem:
         schedule.clear()
 
         # Collecte toutes les 6 heures
-        schedule.every(6).hours.do(self.run_all_collectors)
+        schedule.every(4).hours.do(self.run_all_collectors)
 
         # Alertes quotidiennes à 9h
         schedule.every().day.at("09:00").do(self.send_daily_alerts)
