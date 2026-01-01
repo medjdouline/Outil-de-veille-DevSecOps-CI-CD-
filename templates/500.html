@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Erreur serveur - {{ super() }}{% endblock %}
+
+{% block content %}
+<div class="error-page">
+    <h2>⚠️ Erreur serveur (500)</h2>
+    <p>Une erreur est survenue sur le serveur.</p>
+    <a href="/" class="btn btn-primary">Retour à l'accueil</a>
+</div>
+{% endblock %}

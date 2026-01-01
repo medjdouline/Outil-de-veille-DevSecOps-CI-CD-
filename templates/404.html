@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Page non trouvée - {{ super() }}{% endblock %}
+
+{% block content %}
+<div class="error-page">
+    <h2>❌ Page non trouvée (404)</h2>
+    <p>Désolé, la page que tu cherches n'existe pas.</p>
+    <a href="/" class="btn btn-primary">Retour à l'accueil</a>
+</div>
+{% endblock %}

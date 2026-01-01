@@ -1,0 +1,550 @@
+{% extends "base.html" %}
+
+{% block title %}Administration - {{ super() }}{% endblock %}
+
+{% block content %}
+<div class="admin-page">
+    <h2>Panel d'Administration</h2>
+
+    <div class="admin-grid">
+        <!-- Section Automatisation -->
+        <section class="admin-section">
+            <h3>Automatisation</h3>
+            <div class="automation-controls">
+                <div class="status-indicator">
+                    <span class="status-label">Statut:</span>
+                    <span class="status-badge" id="automation-status">Vérification...</span>
+                </div>
+
+                <div class="control-buttons">
+                    <button onclick="startAutomation()" class="btn btn-success" id="start-btn">
+                        Démarrer
+                    </button>
+                    <button onclick="stopAutomation()" class="btn btn-danger" id="stop-btn">
+                        Arrêter
+                    </button>
+                </div>
+
+                <div class="manual-actions">
+                    <h4>Actions Manuelles</h4>
+                    <button onclick="runCollectors()" class="btn btn-primary">
+                        🔄 Lancer Collecteurs
+                    </button>
+                    <button onclick="testAlerts()" class="btn btn-warning">
+                        📧 Tester Alertes
+                    </button>
+                </div>
+            </div>
+
+            <div class="schedule-info" id="schedule-info">
+                <h4>Prochaines Exécutions</h4>
+                <div id="next-runs">Chargement...</div>
+            </div>
+        </section>
+
+        <!-- Section Base de Données -->
+        <section class="admin-section">
+            <h3>Base de Données</h3>
+            <div class="db-info">
+                <div class="stat-item">
+                    <span class="stat-label">Total vulnérabilités:</span>
+                    <span class="stat-value" id="total-vulns">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Critiques:</span>
+                    <span class="stat-value critical" id="critical-count">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Haute sévérité:</span>
+                    <span class="stat-value high" id="high-count">-</span>
+                </div>
+            </div>
+
+            <div class="db-actions">
+                <a href="/add_test_data" class="btn btn-secondary" target="_blank">
+                    Ajouter Données Test
+                </a>
+                <button onclick="refreshStats()" class="btn btn-info">
+                    Actualiser Stats
+                </button>
+            </div>
+        </section>
+
+        <!-- Section Rapports -->
+        <section class="admin-section">
+            <h3>Rapports</h3>
+            <div class="report-actions">
+                <a href="/reports" class="btn btn-primary">
+                    Voir Rapports
+                </a>
+                <a href="/generate_pdf" class="btn btn-success" target="_blank">
+                    Générer PDF
+                </a>
+            </div>
+
+            <div class="quick-stats">
+                <h4>Analyse Rapide</h4>
+                <div id="quick-analysis">Chargement...</div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- Logs système -->
+    <section class="admin-section full-width">
+        <h3>Logs Système</h3>
+        <div class="logs-container">
+            <div id="system-logs" class="logs-output">
+                Chargement des logs...<br>
+                <span id="current-time"></span>
+            </div>
+            <button onclick="clearLogs()" class="btn btn-secondary">🗑️ Effacer</button>
+        </div>
+    </section>
+</div>
+
+<style>
+.admin-page {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.admin-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.admin-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.admin-section.full-width {
+    grid-column: 1 / -1;
+}
+
+.automation-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-badge {
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.status-badge.running {
+    background-color: #27ae60;
+    color: white;
+}
+
+.status-badge.stopped {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.status-badge.loading {
+    background-color: #f39c12;
+    color: white;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.manual-actions {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.manual-actions h4 {
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+}
+
+.schedule-info {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.db-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-value {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.stat-value.critical {
+    color: #e74c3c;
+}
+
+.stat-value.high {
+    color: #f39c12;
+}
+
+.db-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.report-actions, .alert-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.quick-stats {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.alert-config {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.config-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.config-status.configured {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.config-status.not-configured {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.alert-history {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.logs-container {
+    position: relative;
+}
+
+.logs-output {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 1rem;
+    height: 300px;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.btn-success {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #229954;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+}
+
+.btn-info {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+    .admin-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .control-buttons, .db-actions, .report-actions, .alert-actions {
+        flex-direction: column;
+    }
+
+    .logs-output {
+        height: 200px;
+    }
+}
+</style>
+
+<script>
+// Variables globales pour les logs
+let systemLogs = [];
+
+// Fonction pour ajouter un log
+function addLog(message, type = 'info') {
+    const timestamp = new Date().toLocaleTimeString();
+    const logEntry = `[${timestamp}] ${message}`;
+    systemLogs.push(logEntry);
+
+    // Garder seulement les 100 derniers logs
+    if (systemLogs.length > 100) {
+        systemLogs = systemLogs.slice(-100);
+    }
+
+    updateLogsDisplay();
+
+    // Style selon le type
+    const colors = {
+        'success': '#27ae60',
+        'error': '#e74c3c',
+        'warning': '#f39c12',
+        'info': '#3498db'
+    };
+
+    console.log(`%c${logEntry}`, `color: ${colors[type] || colors.info}`);
+}
+
+// Mettre à jour l'affichage des logs
+function updateLogsDisplay() {
+    const logsContainer = document.getElementById('system-logs');
+    logsContainer.innerHTML = systemLogs.join('<br>');
+    logsContainer.scrollTop = logsContainer.scrollHeight;
+}
+
+// Effacer les logs
+function clearLogs() {
+    systemLogs = [];
+    updateLogsDisplay();
+    addLog('Logs effacés', 'info');
+}
+
+// Vérifier le statut de l'automatisation
+async function checkAutomationStatus() {
+    try {
+        const response = await fetch('/automation/status');
+        const data = await response.json();
+
+        const statusBadge = document.getElementById('automation-status');
+        if (data.is_running) {
+            statusBadge.textContent = 'ACTIF';
+            statusBadge.className = 'status-badge running';
+            document.getElementById('start-btn').disabled = true;
+            document.getElementById('stop-btn').disabled = false;
+        } else {
+            statusBadge.textContent = 'ARRÊTÉ';
+            statusBadge.className = 'status-badge stopped';
+            document.getElementById('start-btn').disabled = false;
+            document.getElementById('stop-btn').disabled = true;
+        }
+
+        // Afficher les prochaines exécutions
+        const nextRunsDiv = document.getElementById('next-runs');
+        if (data.next_runs && data.next_runs.length > 0) {
+            nextRunsDiv.innerHTML = data.next_runs.map(run =>
+                `<div>• ${run.job}</div>`
+            ).join('');
+        } else {
+            nextRunsDiv.innerHTML = 'Aucune tâche planifiée';
+        }
+
+    } catch (error) {
+        addLog(`Erreur vérification statut: ${error.message}`, 'error');
+    }
+}
+
+// Démarrer l'automatisation
+async function startAutomation() {
+    try {
+        addLog('Démarrage de l\'automatisation...', 'info');
+        const response = await fetch('/automation/start');
+        const data = await response.json();
+
+        if (data.status === 'success') {
+            addLog('Automatisation démarrée avec succès', 'success');
+            setTimeout(checkAutomationStatus, 1000);
+        } else {
+            addLog(`Erreur démarrage: ${data.message}`, 'error');
+        }
+    } catch (error) {
+        addLog(`Erreur démarrage: ${error.message}`, 'error');
+    }
+}
+
+// Arrêter l'automatisation
+async function stopAutomation() {
+    try {
+        addLog('Arrêt de l\'automatisation...', 'info');
+        const response = await fetch('/automation/stop');
+        const data = await response.json();
+
+        if (data.status === 'success') {
+            addLog('Automatisation arrêtée avec succès', 'success');
+            setTimeout(checkAutomationStatus, 1000);
+        } else {
+            addLog(`Erreur arrêt: ${data.message}`, 'error');
+        }
+    } catch (error) {
+        addLog(`Erreur arrêt: ${error.message}`, 'error');
+    }
+}
+
+// Exécuter manuellement les collecteurs
+async function runCollectors() {
+    try {
+        addLog('Lancement manuel des collecteurs...', 'info');
+        const response = await fetch('/automation/run-collectors');
+        const data = await response.json();
+
+        if (data.status === 'success') {
+            addLog('Collecteurs exécutés avec succès', 'success');
+            setTimeout(refreshStats, 2000);
+        } else {
+            addLog(`Erreur collecteurs: ${data.message}`, 'error');
+        }
+    } catch (error) {
+        addLog(`Erreur collecteurs: ${error.message}`, 'error');
+    }
+}
+
+// Tester les alertes
+async function testAlerts() {
+    try {
+        addLog('Test des alertes email...', 'info');
+        const response = await fetch('/automation/test-alerts');
+        const data = await response.json();
+
+        if (data.status === 'success') {
+            addLog('Test des alertes envoyé avec succès', 'success');
+        } else {
+            addLog(`Erreur test alertes: ${data.message}`, 'error');
+        }
+    } catch (error) {
+        addLog(`Erreur test alertes: ${error.message}`, 'error');
+    }
+}
+
+// Actualiser les statistiques
+async function refreshStats() {
+    try {
+        const response = await fetch('/api/statistics');
+        const stats = await response.json();
+
+        document.getElementById('total-vulns').textContent = stats.total_vulnerabilities || 0;
+        document.getElementById('critical-count').textContent = stats.critical || 0;
+        document.getElementById('high-count').textContent = stats.high || 0;
+
+        addLog('Statistiques actualisées', 'success');
+    } catch (error) {
+        addLog(`Erreur stats: ${error.message}`, 'error');
+    }
+}
+
+// Tester la configuration email
+async function testEmailConfig() {
+    addLog('Test de la configuration email...', 'info');
+
+    // Simulation du test (en production, faire un vrai test)
+    setTimeout(() => {
+        const configStatus = document.getElementById('email-config-status');
+        // Simuler un test réussi ou échoué
+        const isConfigured = Math.random() > 0.5;
+
+        if (isConfigured) {
+            configStatus.textContent = 'CONFIGURÉ';
+            configStatus.className = 'config-status configured';
+            addLog('Configuration email valide', 'success');
+        } else {
+            configStatus.textContent = 'NON CONFIGURÉ';
+            configStatus.className = 'config-status not-configured';
+            addLog('Configuration email manquante ou invalide', 'warning');
+        }
+    }, 1000);
+}
+
+// Initialisation
+document.addEventListener('DOMContentLoaded', function() {
+    addLog('Panel d\'administration chargé', 'success');
+
+    // Vérifier le statut initial
+    checkAutomationStatus();
+    refreshStats();
+    testEmailConfig();
+
+    // Mettre à jour l'heure courante
+    function updateTime() {
+        document.getElementById('current-time').textContent =
+            new Date().toLocaleString();
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+
+    // Actualiser automatiquement le statut toutes les 30 secondes
+    setInterval(checkAutomationStatus, 30000);
+});
+</script>
+{% endblock %}

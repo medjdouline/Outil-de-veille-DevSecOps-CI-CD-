@@ -1,0 +1,600 @@
+/* =========================================================
+   SYSTEM INTERFACE — CRT / SURVEILLANCE STYLE
+   ========================================================= */
+
+/* ================= VARIABLES ================= */
+:root {
+    --ui-primary: #7fffd4;
+    --ui-secondary: #9fdcff;
+
+    --ui-bg-main: #05080c;
+    --ui-bg-panel: rgba(8, 15, 25, 0.94);
+
+    --ui-text-main: #d8f6ff;
+    --ui-text-muted: #6b8b99;
+
+    --ui-grid: rgba(127, 255, 212, 0.12);
+    --ui-border: rgba(127, 255, 212, 0.35);
+
+    --ui-critical: #ff4c4c;
+    --ui-high: #ffae42;
+    --ui-medium: #3ab0ff;
+    --ui-low: #3aff8f;
+}
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+body {
+    font-family: "IBM Plex Mono", "Courier New", monospace;
+    background-color: var(--ui-bg-main);
+    color: var(--ui-text-main);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* CRT scanlines */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.03) 0px,
+            rgba(255,255,255,0.03) 1px,
+            transparent 2px,
+            transparent 4px
+        );
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Subtle grid */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(var(--ui-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--ui-grid) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+    opacity: 0.35;
+    z-index: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: rgba(5, 8, 12, 0.98);
+    border-bottom: 1px solid var(--ui-border);
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand h1 {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ui-primary);
+    font-weight: 600;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--ui-text-muted);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--ui-primary);
+}
+
+/* ================= HEADINGS ================= */
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ui-primary);
+}
+
+h3 {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ui-text-muted);
+}
+
+/* ================= MAIN ================= */
+main {
+    padding: 3rem 0;
+}
+
+/* ================= STATS ================= */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: var(--ui-bg-panel);
+    border: 1px solid var(--ui-border);
+    padding: 1.4rem;
+    text-align: center;
+    position: relative;
+}
+
+.stat-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px dashed rgba(127,255,212,0.15);
+    pointer-events: none;
+}
+
+/* TITRE STAT */
+.stat-card h3 {
+    font-size: 0.7rem;
+    margin-bottom: 0.6rem;
+}
+
+/* CHIFFRES — RÉDUITS */
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--ui-primary);
+    letter-spacing: 1px;
+}
+
+/* Variantes */
+.stat-card.critical .stat-number { color: var(--ui-critical); }
+.stat-card.high .stat-number { color: var(--ui-high); }
+.stat-card.medium .stat-number { color: var(--ui-medium); }
+.stat-card.low .stat-number { color: var(--ui-low); }
+
+/* ================= BUTTONS ================= */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.6rem;
+    border: 1px solid var(--ui-border);
+    background: transparent;
+    color: var(--ui-primary);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: rgba(127,255,212,0.08);
+}
+
+/* ================= FORMS ================= */
+.search-form {
+    background: var(--ui-bg-panel);
+    border: 1px solid var(--ui-border);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.4rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    color: var(--ui-text-muted);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid var(--ui-border);
+    padding: 0.8rem;
+    color: var(--ui-text-main);
+    font-family: inherit;
+    font-size: 0.8rem;
+}
+
+/* ================= TABLE ================= */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--ui-bg-panel);
+    border: 1px solid var(--ui-border);
+}
+
+.results-table th {
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ui-primary);
+    border-bottom: 1px solid var(--ui-border);
+}
+
+.results-table td {
+    padding: 0.9rem;
+    font-size: 0.8rem;
+    border-bottom: 1px solid rgba(127,255,212,0.1);
+}
+
+.results-table tbody tr:hover {
+    background: rgba(127,255,212,0.05);
+}
+
+/* ================= BADGES ================= */
+.severity-badge {
+    padding: 0.3rem 0.9rem;
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    border: 1px solid;
+}
+
+.severity-badge.critical {
+    color: var(--ui-critical);
+    border-color: var(--ui-critical);
+}
+
+.severity-badge.high {
+    color: var(--ui-high);
+    border-color: var(--ui-high);
+}
+
+.severity-badge.medium {
+    color: var(--ui-medium);
+    border-color: var(--ui-medium);
+}
+
+.severity-badge.low {
+    color: var(--ui-low);
+    border-color: var(--ui-low);
+}
+
+/* ================= SECTIONS ================= */
+.report-section,
+.admin-section {
+    background: var(--ui-bg-panel);
+    border: 1px solid var(--ui-border);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    border-top: 1px solid var(--ui-border);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--ui-text-muted);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+}
+
+/* ================= CORRECTIONS FINALES ================= */
+
+/* 1. GRAPHIQUES - Taille moyenne et responsive */
+.chart-container {
+    width: 100%;
+    max-width: 700px;  /* Taille moyenne */
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background: rgba(8, 15, 25, 0.6);
+    border: 1px solid var(--ui-border);
+}
+
+.chart-container canvas,
+.chart-container img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 450px;
+    display: block;
+}
+
+/* 2. SECTIONS - Forcer fond sombre et texte clair */
+.report-section,
+.admin-section {
+    background: var(--ui-bg-panel) !important;
+    color: var(--ui-text-main) !important;
+    border: 1px solid var(--ui-border);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Tous les textes dans ces sections en clair */
+.report-section *,
+.admin-section * {
+    color: var(--ui-text-main) !important;
+    background: transparent !important;
+}
+
+/* Titres h3 en cyan */
+.report-section h3,
+.admin-section h3 {
+    color: var(--ui-primary) !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Titres h4 légèrement plus petits */
+.report-section h4,
+.admin-section h4 {
+    color: var(--ui-secondary) !important;
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Paragraphes et listes */
+.report-section p,
+.report-section li,
+.admin-section p,
+.admin-section li {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+/* Strong/bold en cyan clair */
+.report-section strong,
+.admin-section strong {
+    color: var(--ui-primary) !important;
+}
+
+/* 3. TABLEAUX dans sections - Fond sombre */
+.report-section table,
+.admin-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.4) !important;
+    margin: 1rem 0;
+}
+
+.report-section table th,
+.admin-section table th {
+    background: rgba(127, 255, 212, 0.15) !important;
+    color: var(--ui-primary) !important;
+    padding: 0.8rem;
+    text-align: left;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.report-section table td,
+.admin-section table td {
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(127, 255, 212, 0.1);
+    color: var(--ui-text-main) !important;
+    font-size: 0.8rem;
+}
+
+/* 4. BOUTONS dans admin */
+.admin-section .btn {
+    background: rgba(127, 255, 212, 0.08) !important;
+    border: 1px solid var(--ui-primary) !important;
+    color: var(--ui-primary) !important;
+    padding: 0.8rem 1.4rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.admin-section .btn:hover {
+    background: rgba(127, 255, 212, 0.2) !important;
+}
+
+/* 5. PRE/CODE (logs système) - Fond sombre */
+.report-section pre,
+.admin-section pre,
+.report-section code,
+.admin-section code {
+    background: rgba(0, 0, 0, 0.6) !important;
+    color: var(--ui-secondary) !important;
+    padding: 1rem;
+    border: 1px solid rgba(127, 255, 212, 0.2);
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    font-size: 0.75rem;
+    overflow-x: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* 6. INPUTS/SELECT dans sections */
+.report-section input,
+.report-section select,
+.admin-section input,
+.admin-section select {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid var(--ui-border) !important;
+    color: var(--ui-text-main) !important;
+    padding: 0.7rem;
+}
+
+/* 7. LABELS */
+.report-section label,
+.admin-section label {
+    color: var(--ui-primary) !important;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* 8. GRILLE GRAPHIQUES (2 colonnes sur desktop) */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* 9. RESPONSIVE - Mobile */
+@media (max-width: 768px) {
+    .chart-container {
+        max-width: 100%;
+        padding: 0.5rem;
+    }
+    
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .report-section,
+    .admin-section {
+        padding: 1.5rem;
+    }
+}
+
+/* ================= FIX PAGE ACCUEIL ================= */
+
+/* Pousser le contenu principal plus bas */
+main {
+    padding: 4rem 0 6rem 0;  /* Augmenter padding top et bottom */
+    min-height: calc(100vh - 200px);  /* Assurer hauteur minimum */
+}
+
+/* Footer plus bas */
+footer {
+    margin-top: 4rem;  /* Espace avant le footer */
+    border-top: 1px solid var(--ui-border);
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--ui-text-muted);
+}
+
+/* Composants dans l'accueil - espacer davantage */
+.stats-grid {
+    margin-bottom: 4rem;  /* Plus d'espace après les stats */
+}
+
+.trends-section,
+.components-section {
+    margin-bottom: 3rem;  /* Espace entre sections */
+}
+
+/* ================= FIX BOUTONS RAPPORTS ================= */
+
+/* Uniformiser tous les boutons */
+.btn,
+button.btn,
+a.btn,
+input[type="submit"],
+input[type="button"] {
+    display: inline-block;
+    padding: 0.75rem 1.6rem;
+    border: 1px solid var(--ui-border);
+    background: transparent;
+    color: var(--ui-primary);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+.btn:hover,
+button.btn:hover,
+a.btn:hover {
+    background: rgba(127, 255, 212, 0.08);
+    border-color: var(--ui-secondary);
+}
+
+/* Boutons dans les sections reports/admin */
+.report-section .btn,
+.admin-section .btn {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    background: rgba(127, 255, 212, 0.05);
+}
+
+/* Bouton primaire (Générer PDF) */
+.btn-primary {
+    background: rgba(127, 255, 212, 0.15) !important;
+    border-color: var(--ui-primary) !important;
+    color: var(--ui-primary) !important;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: rgba(127, 255, 212, 0.25) !important;
+}
+
+/* Bouton secondaire (Actualiser) */
+.btn-secondary {
+    background: transparent !important;
+    border-color: var(--ui-text-muted) !important;
+    color: var(--ui-text-muted) !important;
+}
+
+.btn-secondary:hover {
+    border-color: var(--ui-primary) !important;
+    color: var(--ui-primary) !important;
+    background: rgba(127, 255, 212, 0.05) !important;
+}
+
+/* Groupe de boutons côte à côte */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}

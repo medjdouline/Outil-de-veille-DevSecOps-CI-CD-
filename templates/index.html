@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard">
+    <h2>Tableau de Bord</h2>
+    
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Total de vulnérabilités</h3>
+            <p class="stat-number">{{ stats.total_vulnerabilities }}</p>
+        </div>
+        
+        <div class="stat-card critical">
+            <h3>Critiques</h3>
+            <p class="stat-number">{{ stats.critical }}</p>
+        </div>
+        
+        <div class="stat-card high">
+            <h3>Haute sévérité</h3>
+            <p class="stat-number">{{ stats.high }}</p>
+        </div>
+    </div>
+
+    <div class="top-components">
+        <h3>Composants les plus affectés</h3>
+        <ul>
+            {% for trend in trends %}
+            <li>
+                <strong>{{ trend.component }}</strong>
+                <span class="badge">{{ trend.count }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <a href="/search" class="btn btn-primary">Voir toutes les vulnérabilités</a>
+</div>
+{% endblock %}

@@ -1,0 +1,986 @@
+[
+  {
+    "ecosystem":"Docker",
+    "source_id":"github_advisories_containers",
+    "source_name":"GitHub Advisories (containers)",
+    "title":"GitHub Advisory Database · GitHub",
+    "url":"https:\/\/github.com\/advisories?query=container",
+    "published":null,
+    "cves":[
+      "CVE-2023-54047",
+      "CVE-2025-26787",
+      "CVE-2025-68697"
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":10.0,
+    "summary":"GitHub Advisory Database · GitHub GitHub Advisory Database · GitHub Skip to content Navigation Menu Toggle navigation Sign in Appearance settings GitHub Advisory Database Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Spark Build and deploy intelligent apps GitHub Models Manage and compare prompts MCP Registry New Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI\/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24\/7 support Pricing Search or jump to... Search code, repositories, users, issues, pull requests... Search Clear Search syntax tips Provide feedback We read every piece of feedback, and take your input very seriously. Include my email address so I can be contacted Cancel Submit feedback Saved searches Use saved searches to filter your results more quickly Name Query To see all available qualifiers, see our documentation ."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"github_advisories_kubernetes",
+    "source_name":"GitHub Advisories (kubernetes)",
+    "title":"GitHub Advisory Database · GitHub",
+    "url":"https:\/\/github.com\/advisories?query=kubernetes",
+    "published":null,
+    "cves":[
+      "CVE-2025-13281",
+      "CVE-2025-13877",
+      "CVE-2025-68476"
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":10.0,
+    "summary":"GitHub Advisory Database · GitHub GitHub Advisory Database · GitHub Skip to content Navigation Menu Toggle navigation Sign in Appearance settings GitHub Advisory Database Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Spark Build and deploy intelligent apps GitHub Models Manage and compare prompts MCP Registry New Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI\/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24\/7 support Pricing Search or jump to... Search code, repositories, users, issues, pull requests... Search Clear Search syntax tips Provide feedback We read every piece of feedback, and take your input very seriously. Include my email address so I can be contacted Cancel Submit feedback Saved searches Use saved searches to filter your results more quickly Name Query To see all available qualifiers, see our documentation ."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Introducing Gateway API Inference Extension",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/06\/05\/introducing-gateway-api-inference-extension\/",
+    "published":"2025-06-05",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":6.0,
+    "summary":"Introducing Gateway API Inference Extension <p>Modern generative AI and large language model (LLM) services create unique traffic-routing challenges on Kubernetes. Unlike typical short-lived, stateless web requests, LLM inference sessions are often long-running, resource-intensive, and partially stateful."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.35: Timbernetes (The World Tree Release)",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/12\/17\/kubernetes-v1-35-release\/",
+    "published":"2025-12-17",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":6.0,
+    "summary":"Kubernetes v1.35: Timbernetes (The World Tree Release) <p><strong>Editors<\/strong>: Aakanksha Bhende, Arujjwal Negi, Chad M. Crowell, Graziano Casto, Swathi Rao<\/p> <p>Similar to previous releases, the release of Kubernetes v1.35 introduces new stable, beta, and alpha features. The consistent delivery of high-quality releases underscores the strength of our development cycle and the vibrant support from our community.<\/p> <p>This release consists of 60 enhancements, including 17 stable, 19 beta, and 22 alpha features.<\/p> <p>There are also some <a href=\"#deprecations-removals-and-community-updates\">deprecations and removals<\/a> in this release; make sure to read about those.<\/p> <h2 id=\"release-theme-and-logo\">Release theme and logo<\/h2> <figure class=\"release-logo \"> <img src=\"https:\/\/kubernetes.io\/blog\/2025\/12\/17\/kubernetes-v1-35-release\/k8s-v1.35.png\" alt=\"Kubernetes v1.35 Timbernetes logo: a storybook hex badge with a glowing world tree whose branches cradle Earth and a white Kubernetes wheel; three cheerful squirrels stand below—a wizard in a plum robe holding an LGTM scroll, a warrior with an axe and blue Kubernetes shield, and a lantern-carrying rogue in a navy cloak—on green grass above a gold ribbon reading World Tree Release, backed by soft mountains and cloud-swept sky\"\/> <\/figure> <p>2025 began in the shimmer of Octarine: The Color of Magic (v1.33) and rode the gusts Of Wind &amp; Will (v1.34)."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Announcing etcd v3.6.0",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/05\/15\/announcing-etcd-3.6\/",
+    "published":"2025-05-15",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":6.0,
+    "summary":"Announcing etcd v3.6.0 <p><em>This announcement originally <a href=\"https:\/\/etcd.io\/blog\/2025\/announcing-etcd-3.6\/\">appeared<\/a> on the etcd blog.<\/em><\/p> <p>Today, we are releasing <a href=\"https:\/\/github.com\/etcd-io\/etcd\/releases\/tag\/v3.6.0\">etcd v3.6.0<\/a>, the first minor release since etcd v3.5.0 on June 15, 2021. This release introduces several new features, makes significant progress on long-standing efforts like downgrade support and migration to v3store, and addresses numerous critical &amp; major issues."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"moby_security",
+    "source_name":"Moby Security",
+    "title":"Security Advisories · moby\/moby · GitHub",
+    "url":"https:\/\/github.com\/moby\/moby\/security\/advisories",
+    "published":null,
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Security Advisories · moby\/moby · GitHub Security Advisories · moby\/moby · GitHub Skip to content Navigation Menu Toggle navigation Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Spark Build and deploy intelligent apps GitHub Models Manage and compare prompts MCP Registry New Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI\/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24\/7 support Pricing Search or jump to... Search code, repositories, users, issues, pull requests... Search Clear Search syntax tips Provide feedback We read every piece of feedback, and take your input very seriously. Include my email address so I can be contacted Cancel Submit feedback Saved searches Use saved searches to filter your results more quickly Name Query To see all available qualifiers, see our documentation ."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Image Compatibility In Cloud Native Environments",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/06\/25\/image-compatibility-in-cloud-native-environments\/",
+    "published":"2025-06-25",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Image Compatibility In Cloud Native Environments <p>In industries where systems must run very reliably and meet strict performance criteria such as telecommunication, high-performance or AI computing, containerized applications often need specific operating system configuration or hardware presence. It is common practice to require the use of specific versions of the kernel, its configuration, device drivers, or system components."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34 Sneak Peek",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/07\/28\/kubernetes-v1-34-sneak-peek\/",
+    "published":"2025-07-28",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Kubernetes v1.34 Sneak Peek <p>Kubernetes v1.34 is coming at the end of August 2025. This release will not include any removal or deprecation, but it is packed with an impressive number of enhancements."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Finer-Grained Control Over Container Restarts",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/08\/29\/kubernetes-v1-34-per-container-restart-policy\/",
+    "published":"2025-08-29",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Kubernetes v1.34: Finer-Grained Control Over Container Restarts <p>With the release of Kubernetes 1.34, a new alpha feature is introduced that gives you more granular control over container restarts within a Pod. This feature, named <strong>Container Restart Policy and Rules<\/strong>, allows you to specify a restart policy for each container individually, overriding the Pod's global restart policy."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Navigating Failures in Pods With Devices",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/07\/03\/navigating-failures-in-pods-with-devices\/",
+    "published":"2025-07-03",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Navigating Failures in Pods With Devices <p>Kubernetes is the de facto standard for container orchestration, but when it comes to handling specialized hardware like GPUs and other accelerators, things get a bit complicated. This blog post dives into the challenges of managing failure modes when operating pods with devices in Kubernetes, based on insights from <a href=\"https:\/\/sched.co\/1i7pT\">Sergey Kanzhelev and Mrunal Patel's talk at KubeCon NA 2024<\/a>."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: DRA Consumable Capacity",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/18\/kubernetes-v1-34-dra-consumable-capacity\/",
+    "published":"2025-09-18",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Kubernetes v1.34: DRA Consumable Capacity <p>Dynamic Resource Allocation (DRA) is a Kubernetes API for managing scarce resources across Pods and containers. It enables flexible resource requests, going beyond simply allocating <em>N<\/em> number of devices to support more granular usage scenarios."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Pods Report DRA Resource Health",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/17\/kubernetes-v1-34-pods-report-dra-resource-health\/",
+    "published":"2025-09-17",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Kubernetes v1.34: Pods Report DRA Resource Health <p>The rise of AI\/ML and other high-performance workloads has made specialized hardware like GPUs, TPUs, and FPGAs a critical component of many Kubernetes clusters. However, as discussed in a <a href=\"https:\/\/kubernetes.io\/blog\/2025\/07\/03\/navigating-failures-in-pods-with-devices\/\">previous blog post about navigating failures in Pods with devices<\/a>, when this hardware fails, it can be difficult to diagnose, leading to significant downtime."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Gateway API 1.4: New Features",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/11\/06\/gateway-api-v1-4\/",
+    "published":"2025-11-06",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Gateway API 1.4: New Features <p><img alt=\"Gateway API logo\" src=\"https:\/\/kubernetes.io\/blog\/2025\/11\/06\/gateway-api-v1-4\/gateway-api-logo.svg\"><\/p> <p>Ready to rock your Kubernetes networking? The Kubernetes SIG Network community presented the General Availability (GA) release of Gateway API (v1.4.0)!"
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Snapshottable API server cache",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/09\/kubernetes-v1-34-snapshottable-api-server-cache\/",
+    "published":"2025-09-09",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Kubernetes v1.34: Snapshottable API server cache <p>For years, the Kubernetes community has been on a mission to improve the stability and performance predictability of the API server. A major focus of this effort has been taming <strong>list<\/strong> requests, which have historically been a primary source of high memory usage and heavy load on the <code>etcd<\/code> datastore."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Of Wind & Will (O' WaW)",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/08\/27\/kubernetes-v1-34-release\/",
+    "published":"2025-08-27",
+    "cves":[
+      "CVE-2024-7598"
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Kubernetes v1.34: Of Wind & Will (O' WaW) <p><strong>Editors:<\/strong> Agustina Barbetta, Alejandro Josue Leon Bellido, Graziano Casto, Melony Qin, Dipesh Rawat<\/p> <p>Similar to previous releases, the release of Kubernetes v1.34 introduces new stable, beta, and alpha features. The consistent delivery of high-quality releases underscores the strength of our development cycle and the vibrant support from our community.<\/p> <p>This release consists of 58 enhancements."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Tuning Linux Swap for Kubernetes: A Deep Dive",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/08\/19\/tuning-linux-swap-for-kubernetes-a-deep-dive\/",
+    "published":"2025-08-19",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Tuning Linux Swap for Kubernetes: A Deep Dive <p>The Kubernetes <a href=\"https:\/\/kubernetes.io\/docs\/concepts\/cluster-administration\/swap-memory-management\/\">NodeSwap feature<\/a>, likely to graduate to <em>stable<\/em> in the upcoming Kubernetes v1.34 release, allows swap usage: a significant shift from the conventional practice of disabling swap for performance predictability. This article focuses exclusively on tuning swap on Linux nodes, where this feature is available."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Announcing Changed Block Tracking API support (alpha)",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/25\/csi-changed-block-tracking\/",
+    "published":"2025-09-25",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Announcing Changed Block Tracking API support (alpha) <p>We're excited to announce the alpha support for a <em>changed block tracking<\/em> mechanism. This enhances the Kubernetes storage ecosystem by providing an efficient way for <a href=\"https:\/\/kubernetes.io\/docs\/concepts\/storage\/volumes\/#csi\">CSI<\/a> storage drivers to identify changed blocks in PersistentVolume snapshots."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Spotlight on Policy Working Group",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/10\/18\/wg-policy-spotlight-2025\/",
+    "published":"2025-10-18",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.5,
+    "summary":"Spotlight on Policy Working Group <p><em>(Note: The Policy Working Group has completed its mission and is no longer active. This article reflects its work, accomplishments, and insights into how a working group operates."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"7 Common Kubernetes Pitfalls (and How I Learned to Avoid Them)",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/10\/20\/seven-kubernetes-pitfalls-and-how-to-avoid\/",
+    "published":"2025-10-20",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":5.0,
+    "summary":"7 Common Kubernetes Pitfalls (and How I Learned to Avoid Them) <p>It’s no secret that Kubernetes can be both powerful and frustrating at times. When I first started dabbling with container orchestration, I made more than my fair share of mistakes enough to compile a whole list of pitfalls."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: VolumeAttributesClass for Volume Modification GA",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/08\/kubernetes-v1-34-volume-attributes-class\/",
+    "published":"2025-09-08",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":4.0,
+    "summary":"Kubernetes v1.34: VolumeAttributesClass for Volume Modification GA <p>The VolumeAttributesClass API, which empowers users to dynamically modify volume attributes, has officially graduated to General Availability (GA) in Kubernetes v1.34. This marks a significant milestone, providing a robust and stable way to tune your persistent storage directly within Kubernetes.<\/p> <h2 id=\"what-is-volumeattributesclass\">What is VolumeAttributesClass?<\/h2> <p>At its core, VolumeAttributesClass is a cluster-scoped resource that defines a set of mutable parameters for a volume."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: PSI Metrics for Kubernetes Graduates to Beta",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/04\/kubernetes-v1-34-introducing-psi-metrics-beta\/",
+    "published":"2025-09-04",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":4.0,
+    "summary":"Kubernetes v1.34: PSI Metrics for Kubernetes Graduates to Beta <p>As Kubernetes clusters grow in size and complexity, understanding the health and performance of individual nodes becomes increasingly critical. We are excited to announce that as of Kubernetes v1.34, <strong>Pressure Stall Information (PSI) Metrics<\/strong> has graduated to Beta.<\/p> <h2 id=\"what-is-pressure-stall-information-psi\">What is Pressure Stall Information (PSI)?<\/h2> <p><a href=\"https:\/\/docs.kernel.org\/accounting\/psi.html\">Pressure Stall Information (PSI)<\/a> is a feature of the Linux kernel (version 4.20 and later) that provides a canonical way to quantify pressure on infrastructure resources, in terms of whether demand for a resource exceeds current supply."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.33: In-Place Pod Resize Graduated to Beta",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/05\/16\/kubernetes-v1-33-in-place-pod-resize-beta\/",
+    "published":"2025-05-16",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.5,
+    "summary":"Kubernetes v1.33: In-Place Pod Resize Graduated to Beta <p>On behalf of the Kubernetes project, I am excited to announce that the <strong>in-place Pod resize<\/strong> feature (also known as In-Place Pod Vertical Scaling), first introduced as alpha in Kubernetes v1.27, has graduated to <strong>Beta<\/strong> and will be enabled by default in the Kubernetes v1.33 release! This marks a significant milestone in making resource management for Kubernetes workloads more flexible and less disruptive.<\/p> <h2 id=\"what-is-in-place-pod-resize\">What is in-place Pod resize?<\/h2> <p>Traditionally, changing the CPU or memory resources allocated to a container required restarting the Pod."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_security_ann",
+    "source_name":"Kubernetes Security Announcements",
+    "title":"Kubernetes Security and Disclosure Information | Kubernetes",
+    "url":"https:\/\/kubernetes.io\/docs\/reference\/issues-security\/security\/",
+    "published":null,
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes Security and Disclosure Information | Kubernetes Kubernetes Security and Disclosure Information | Kubernetes Kubernetes Documentation Kubernetes Blog Training Careers Partners Community Versions Release Information v1.35 v1.34 v1.33 v1.32 v1.31 English 中文 (Chinese) Bahasa Indonesia (Indonesian) 한국어 (Korean) Русский (Russian) English বাংলা (Bengali) 中文 (Chinese) Français (French) Deutsch (German) हिन्दी (Hindi) Bahasa Indonesia (Indonesian) Italiano (Italian) 日本語 (Japanese) 한국어 (Korean) Polski (Polish) Português (Portuguese) Русский (Russian) Español (Spanish) Українська (Ukrainian) Tiếng Việt (Vietnamese) Kubernetes Documentation Documentation Available Documentation Versions Getting started Learning environment Production environment Container Runtimes Installing Kubernetes with deployment tools Bootstrapping clusters with kubeadm Installing kubeadm Troubleshooting kubeadm Creating a cluster with kubeadm Customizing components with the kubeadm API Options for Highly Available Topology Creating Highly Available Clusters with kubeadm Set up a High Availability etcd Cluster with kubeadm Configuring each kubelet in your cluster using kubeadm Dual-stack support with kubeadm Turnkey Cloud Solutions Best practices Considerations for large clusters Running in multiple zones Validate node setup Enforcing Pod Security Standards PKI certificates and requirements Concepts Overview Kubernetes Components Objects In Kubernetes Kubernetes Object Management Object Names and IDs Labels and Selectors Namespaces Annotations Field Selectors Finalizers Owners and Dependents Recommended Labels Storage Versions The Kubernetes API Cluster Architecture Nodes Communication between Nodes and the Control Plane Controllers Leases Cloud Controller Manager About cgroup v2 Kubernetes Self-Healing Garbage Collection Mixed Version Proxy Containers Images Container Environment Runtime Class Container Lifecycle Hooks Container Runtime Interface (CRI) Workloads Pods Pod Lifecycle Init Containers Sidecar Containers Ephemeral Containers Disruptions Pod Hostname Pod Quality of Service Classes Workload Reference User Namespaces Downward API Workload API Pod Group Policies Workload Management Deployments ReplicaSet StatefulSets DaemonSet Jobs Automatic Cleanup for Finished Jobs CronJob ReplicationController Managing Workloads Autoscaling Workloads Horizontal Pod Autoscaling Vertical Pod Autoscaling Services, Load Balancing, and Networking Service Ingress Ingress Controllers Gateway API EndpointSlices Network Policies DNS for Services and Pods IPv4\/IPv6 dual-stack Topology Aware Routing Networking on Windows Service ClusterIP allocation Service Internal Traffic Policy Storage Volumes Persistent Volumes Projected Volumes Ephemeral Volumes Storage Classes Volume Attributes Classes Dynamic Volume Provisioning Volume Snapshots Volume Snapshot Classes CSI Volume Cloning Storage Capacity Node-specific Volume Limits Local ephemeral storage Volume Health Monitoring Windows Storage Configuration ConfigMaps Secrets Liveness, Readiness, and Startup Probes Resource Management for Pods and Containers Organizing Cluster Access Using kubeconfig Files Resource Management for Windows nodes Security Cloud Native Security Pod Security Standards Pod Security Admission Service Accounts Pod Security Policies Security For Linux Nodes Security For Windows Nodes Controlling Access to the Kubernetes API Role Based Access Control Good Practices Good practices for Kubernetes Secrets Multi-tenancy Hardening Guide - Authentication Mechanisms Hardening Guide - Scheduler Configuration Kubernetes API Server Bypass Risks Linux kernel security constraints for Pods and containers Security Checklist Application Security Checklist Policies Limit Ranges Resource Quotas Process ID Limits And Reservations Node Resource Managers Scheduling, Preemption and Eviction Kubernetes Scheduler Assigning Pods to Nodes Pod Overhead Pod Scheduling Readiness Pod Topology Spread Constraints Taints and Tolerations Scheduling Framework Dynamic Resource Allocation Gang Sched"
+  },
+  {
+    "ecosystem":"",
+    "source_id":"cncf_blog",
+    "source_name":"CNCF Blog",
+    "title":"Building platforms using kro for composition",
+    "url":"https:\/\/www.cncf.io\/blog\/2025\/12\/15\/building-platforms-using-kro-for-composition\/",
+    "published":"2025-12-15",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Building platforms using kro for composition Recent industry developments, such as Amazon’s announcement of the new EKS capabilities, highlight a trend toward supporting platforms with managed GitOps, cloud resource operators, and composition tooling. In particular, the involvement of Kube Resource Orchestrator (kro)—a... Mon, 15 Dec 2025 12:00:00 +0000"
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Gateway API v1.3.0: Advancements in Request Mirroring, CORS, Gateway Merging, and Retry Budgets",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/06\/02\/gateway-api-v1-3\/",
+    "published":"2025-06-02",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Gateway API v1.3.0: Advancements in Request Mirroring, CORS, Gateway Merging, and Retry Budgets <p><img alt=\"Gateway API logo\" src=\"https:\/\/kubernetes.io\/blog\/2025\/06\/02\/gateway-api-v1-3\/gateway-api-logo.svg\"><\/p> <p>Join us in the Kubernetes SIG Network community in celebrating the general availability of <a href=\"https:\/\/gateway-api.sigs.k8s.io\/\">Gateway API<\/a> v1.3.0! We are also pleased to announce that there are already a number of conformant implementations to try, made possible by postponing this blog announcement."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Enhancing Kubernetes Event Management with Custom Aggregation",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/06\/10\/enhancing-kubernetes-event-management-custom-aggregation\/",
+    "published":"2025-06-10",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Enhancing Kubernetes Event Management with Custom Aggregation <p>Kubernetes <a href=\"https:\/\/kubernetes.io\/docs\/reference\/kubernetes-api\/cluster-resources\/event-v1\/\">Events<\/a> provide crucial insights into cluster operations, but as clusters grow, managing and analyzing these events becomes increasingly challenging. This blog post explores how to build custom event aggregation systems that help engineering teams better understand cluster behavior and troubleshoot issues more effectively.<\/p> <h2 id=\"the-challenge-with-kubernetes-events\">The challenge with Kubernetes events<\/h2> <p>In a Kubernetes cluster, events are generated for various operations - from pod scheduling and container starts to volume mounts and network configurations."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.33: Updates to Container Lifecycle",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/05\/14\/kubernetes-v1-33-updates-to-container-lifecycle\/",
+    "published":"2025-05-14",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.33: Updates to Container Lifecycle <p>Kubernetes v1.33 introduces a few updates to the lifecycle of containers. The Sleep action for container lifecycle hooks now supports a zero sleep duration (feature enabled by default)."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: User preferences (kuberc) are available for testing in kubectl 1.34",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/08\/28\/kubernetes-v1-34-kubectl-kuberc-beta\/",
+    "published":"2025-08-28",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.34: User preferences (kuberc) are available for testing in kubectl 1.34 <p>Have you ever wished you could enable <a href=\"https:\/\/kep.k8s.io\/3895\">interactive delete<\/a>, by default, in <code>kubectl<\/code>? Or maybe, you'd like to have custom aliases defined, but not necessarily <a href=\"https:\/\/github.com\/ahmetb\/kubectl-aliases\">generate hundreds of them manually<\/a>?"
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: DRA has graduated to GA",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/01\/kubernetes-v1-34-dra-updates\/",
+    "published":"2025-09-01",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.34: DRA has graduated to GA <p>Kubernetes 1.34 is here, and it has brought a huge wave of enhancements for Dynamic Resource Allocation (DRA)! This release marks a major milestone with many APIs in the <code>resource.k8s.io<\/code> group graduating to General Availability (GA), unlocking the full potential of how you manage devices on Kubernetes."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Start Sidecar First: How To Avoid Snags",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/06\/03\/start-sidecar-first\/",
+    "published":"2025-06-03",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Start Sidecar First: How To Avoid Snags <p>From the <a href=\"https:\/\/kubernetes.io\/blog\/2025\/04\/22\/multi-container-pods-overview\/\">Kubernetes Multicontainer Pods: An Overview blog post<\/a> you know what their job is, what are the main architectural patterns, and how they are implemented in Kubernetes. The main thing I’ll cover in this article is how to ensure that your sidecar containers start before the main app."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Introducing Headlamp Plugin for Karpenter - Scaling and Visibility",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/10\/06\/introducing-headlamp-plugin-for-karpenter\/",
+    "published":"2025-10-06",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Introducing Headlamp Plugin for Karpenter - Scaling and Visibility <p>Headlamp is an open‑source, extensible Kubernetes SIG UI project designed to let you explore, manage, and debug cluster resources.<\/p> <p>Karpenter is a Kubernetes Autoscaling SIG node provisioning project that helps clusters scale quickly and efficiently. It launches new nodes in seconds, selects appropriate instance types for workloads, and manages the full node lifecycle, including scale-down.<\/p> <p>The new Headlamp Karpenter Plugin adds real-time visibility into Karpenter’s activity directly from the Headlamp UI."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Recovery From Volume Expansion Failure (GA)",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/19\/kubernetes-v1-34-recover-expansion-failure\/",
+    "published":"2025-09-19",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.34: Recovery From Volume Expansion Failure (GA) <p>Have you ever made a typo when expanding your persistent volumes in Kubernetes? Meant to specify <code>2TB<\/code> but specified <code>20TiB<\/code>?"
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Pod Level Resources Graduated to Beta",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/22\/kubernetes-v1-34-pod-level-resources\/",
+    "published":"2025-09-22",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.34: Pod Level Resources Graduated to Beta <p>On behalf of the Kubernetes community, I am thrilled to announce that the Pod Level Resources feature has graduated to Beta in the Kubernetes v1.34 release and is enabled by default! This significant milestone introduces a new layer of flexibility for defining and managing resource allocation for your Pods."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes Configuration Good Practices",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/11\/25\/configuration-good-practices\/",
+    "published":"2025-11-25",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes Configuration Good Practices <p>Configuration is one of those things in Kubernetes that seems small until it's not. Configuration is at the heart of every Kubernetes workload."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.35 Sneak Peek",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/11\/26\/kubernetes-v1-35-sneak-peek\/",
+    "published":"2025-11-26",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.35 Sneak Peek <p>As the release of Kubernetes v1.35 approaches, the Kubernetes project continues to evolve. Features may be deprecated, removed, or replaced to improve the project's overall health."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes 1.35: In-Place Pod Resize Graduates to Stable",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/12\/19\/kubernetes-v1-35-in-place-pod-resize-ga\/",
+    "published":"2025-12-19",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes 1.35: In-Place Pod Resize Graduates to Stable <p>This release marks a major step: more than 6 years after its initial conception, the <strong>In-Place Pod Resize<\/strong> feature (also known as In-Place Pod Vertical Scaling), first introduced as alpha in Kubernetes v1.27, and graduated to beta in Kubernetes v1.33, is now <strong>stable (GA)<\/strong> in Kubernetes 1.35!<\/p> <p>This graduation is a major milestone for improving resource efficiency and flexibility for workloads running on Kubernetes.<\/p> <h2 id=\"what-is-in-place-pod-resize\">What is in-place Pod Resize?<\/h2> <p>In the past, the CPU and memory resources allocated to a container in a Pod were immutable. This meant changing them required deleting and recreating the entire Pod."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.35: Kubelet Configuration Drop-in Directory Graduates to GA",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/12\/22\/kubernetes-v1-35-kubelet-config-drop-in-directory-ga\/",
+    "published":"2025-12-22",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.35: Kubelet Configuration Drop-in Directory Graduates to GA <p>With the recent v1.35 release of Kubernetes, support for a kubelet configuration drop-in directory is generally available. The newly stable feature simplifies the management of kubelet configuration across large, heterogeneous clusters.<\/p> <p>With v1.35, the kubelet command line argument <code>--config-dir<\/code> is production-ready and fully supported, allowing you to specify a directory containing kubelet configuration drop-in files."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.35: Fine-grained Supplemental Groups Control Graduates to GA",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/12\/23\/kubernetes-v1-35-fine-grained-supplementalgroups-control-ga\/",
+    "published":"2025-12-23",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.35: Fine-grained Supplemental Groups Control Graduates to GA <p>On behalf of Kubernetes SIG Node, we are pleased to announce the graduation of <em>fine-grained supplemental groups control<\/em> to General Availability (GA) in Kubernetes v1.35!<\/p> <p>The new Pod field, <code>supplementalGroupsPolicy<\/code>, was introduced as an opt-in alpha feature for Kubernetes v1.31, and then had graduated to beta in v1.33. Now, the feature is generally available."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Introducing CPU Manager Static Policy Option for Uncore Cache Alignment",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/02\/kubernetes-v1-34-prefer-align-by-uncore-cache-cpumanager-static-policy-optimization\/",
+    "published":"2025-09-02",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.34: Introducing CPU Manager Static Policy Option for Uncore Cache Alignment <p>A new CPU Manager Static Policy Option called <code>prefer-align-cpus-by-uncorecache<\/code> was introduced in Kubernetes v1.32 as an alpha feature, and has graduated to <strong>beta<\/strong> in Kubernetes v1.34. This CPU Manager Policy Option is designed to optimize performance for specific workloads running on processors with a <em>split uncore cache<\/em> architecture."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Service Account Token Integration for Image Pulls Graduates to Beta",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/03\/kubernetes-v1-34-sa-tokens-image-pulls-beta\/",
+    "published":"2025-09-03",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":3.0,
+    "summary":"Kubernetes v1.34: Service Account Token Integration for Image Pulls Graduates to Beta <p>The Kubernetes community continues to advance security best practices by reducing reliance on long-lived credentials. Following the successful <a href=\"https:\/\/kubernetes.io\/blog\/2025\/05\/07\/kubernetes-v1-33-wi-for-image-pulls\/\">alpha release in Kubernetes v1.33<\/a>, <em>Service Account Token Integration for Kubelet Credential Providers<\/em> has now graduated to <strong>beta<\/strong> in Kubernetes v1.34, bringing us closer to eliminating long-lived image pull secrets from Kubernetes clusters.<\/p> <p>This enhancement allows credential providers to use workload-specific service account tokens to obtain registry credentials, providing a secure, ephemeral alternative to traditional image pull secrets.<\/p> <h2 id=\"what-s-new-in-beta\">What's new in beta?<\/h2> <p>The beta graduation brings several important changes that make the feature more robust and production-ready:<\/p> <h3 id=\"required-cachetype-field\">Required <code>cacheType<\/code> field<\/h3> <p><strong>Breaking change from alpha<\/strong>: The <code>cacheType<\/code> field is <strong>required<\/strong> in the credential provider configuration when using service account tokens."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.35: Job Managed By Goes GA",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/12\/18\/kubernetes-v1-35-job-managedby-for-jobs-goes-ga\/",
+    "published":"2025-12-18",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":2.0,
+    "summary":"Kubernetes v1.35: Job Managed By Goes GA <p>In Kubernetes v1.35, the ability to specify an external Job controller (through <code>.spec.managedBy<\/code>) graduates to General Availability.<\/p> <p>This feature allows external controllers to take full responsibility for Job reconciliation, unlocking powerful scheduling patterns like multi-cluster dispatching with <a href=\"https:\/\/kueue.sigs.k8s.io\/docs\/concepts\/multikueue\/\">MultiKueue<\/a>.<\/p> <h2 id=\"why-delegate-job-reconciliation\">Why delegate Job reconciliation?<\/h2> <p>The primary motivation for this feature is to support multi-cluster batch scheduling architectures, such as MultiKueue.<\/p> <p>The MultiKueue architecture distinguishes between a Management Cluster and a pool of Worker Clusters:<\/p> <ul> <li>The Management Cluster is responsible for dispatching Jobs but not executing them. It needs to accept Job objects to track status, but it skips the creation and execution of Pods.<\/li> <li>The Worker Clusters receive the dispatched Jobs and execute the actual Pods.<\/li> <li>Users usually interact with the Management Cluster."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.33: Job's Backoff Limit Per Index Goes GA",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/05\/13\/kubernetes-v1-33-jobs-backoff-limit-per-index-goes-ga\/",
+    "published":"2025-05-13",
+    "cves":[
+
+    ],
+    "severity_guess":"HIGH",
+    "risk_score_guess":1.5,
+    "summary":"Kubernetes v1.33: Job's Backoff Limit Per Index Goes GA <p>In Kubernetes v1.33, the <em>Backoff Limit Per Index<\/em> feature reaches general availability (GA). This blog describes the Backoff Limit Per Index feature and its benefits.<\/p> <h2 id=\"about-backoff-limit-per-index\">About backoff limit per index<\/h2> <p>When you run workloads on Kubernetes, you must consider scenarios where Pod failures can affect the completion of your workloads."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"cncf_blog",
+    "source_name":"CNCF Blog",
+    "title":"KubeVirt undergoes OSTIF security audit",
+    "url":"https:\/\/www.cncf.io\/blog\/2025\/12\/17\/kubevirt-undergoes-ostif-security-audit\/",
+    "published":"2025-12-17",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":1.5,
+    "summary":"KubeVirt undergoes OSTIF security audit The Open Source Technology Improvement Fund (OSTIF) is proud to share the results of a recent security audit of KubeVirt, a Kubernetes virtualization API and runtime for managing virtual machines. With the continued support of Quarkslab..."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"docker_blog",
+    "source_name":"Docker Blog",
+    "title":"Highlights from AWS re:Invent: Supercharging Kiro with Docker Sandboxes and MCP Catalog",
+    "url":"https:\/\/www.docker.com\/blog\/aws-reinvent-kiro-docker-sandboxes-mcp-catalog\/",
+    "published":"2025-12-12",
+    "cves":[
+
+    ],
+    "severity_guess":"HIGH",
+    "risk_score_guess":1.5,
+    "summary":"Highlights from AWS re:Invent: Supercharging Kiro with Docker Sandboxes and MCP Catalog At the recent AWS re:Invent, Docker focused on a very real developer problem: how to run AI agents locally without giving them access to your machine, credentials, or filesystem. With AWS introducing Kiro, Docker demonstrated how Docker Sandboxes and MCP Toolkit allow developers to run agents inside isolated containers, keeping host environments and secrets out... Fri, 12 Dec 2025 20:22:05 +0000"
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes 1.33: Job's SuccessPolicy Goes GA",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/05\/15\/kubernetes-1-33-jobs-success-policy-goes-ga\/",
+    "published":"2025-05-15",
+    "cves":[
+
+    ],
+    "severity_guess":"HIGH",
+    "risk_score_guess":1.5,
+    "summary":"Kubernetes 1.33: Job's SuccessPolicy Goes GA <p>On behalf of the Kubernetes project, I'm pleased to announce that Job <em>success policy<\/em> has graduated to General Availability (GA) as part of the v1.33 release.<\/p> <h2 id=\"about-job-s-success-policy\">About Job's Success Policy<\/h2> <p>In batch workloads, you might want to use leader-follower patterns like <a href=\"https:\/\/en.wikipedia.org\/wiki\/Message_Passing_Interface\">MPI<\/a>, in which the leader controls the execution, including the followers' lifecycle.<\/p> <p>In this case, you might want to mark it as succeeded even if some of the indexes failed. Unfortunately, a leader-follower Kubernetes Job that didn't use a success policy, in most cases, would have to require <strong>all<\/strong> Pods to finish successfully for that Job to reach an overall succeeded state.<\/p> <p>For Kubernetes Jobs, the API allows you to specify the early exit criteria using the <code>.spec.successPolicy<\/code> field (you can only use the <code>.spec.successPolicy<\/code> field for an <a href=\"https:\/\/kubernetes.io\/docs\/concept\/workloads\/controllers\/job\/#completion-mode\">indexed Job<\/a>)."
+  },
+  {
+    "ecosystem":"",
+    "source_id":"cncf_blog",
+    "source_name":"CNCF Blog",
+    "title":"Kyverno at ContribFest: Community, collaboration, and the power of open source in action",
+    "url":"https:\/\/www.cncf.io\/blog\/2025\/12\/23\/kyverno-at-contribfest-community-collaboration-and-the-power-of-open-source-in-action\/",
+    "published":"2025-12-23",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":1.5,
+    "summary":"Kyverno at ContribFest: Community, collaboration, and the power of open source in action A few weeks ago at KubeCon + CloudNativeCon North America in Atlanta, the Kyverno community had the opportunity to participate in ContribFest, one of the most energizing and community-driven initiatives in the cloud-native ecosystem. While ContribFest... Tue, 23 Dec 2025 12:00:00 +0000"
+  },
+  {
+    "ecosystem":"",
+    "source_id":"cncf_blog",
+    "source_name":"CNCF Blog",
+    "title":"Bringing sustainability back into the conversation: CNCF Cloud Native Sustainability Month Tokyo",
+    "url":"https:\/\/www.cncf.io\/blog\/2025\/12\/24\/bringing-sustainability-back-into-the-conversation-cncf-cloud-native-sustainability-month-tokyo\/",
+    "published":"2025-12-24",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":1.5,
+    "summary":"Bringing sustainability back into the conversation: CNCF Cloud Native Sustainability Month Tokyo It’s undeniable that AI is a breakthrough technology that no one wants to be left behind on. However, as AI accelerates innovation in the cloud-native world, environmental sustainability often gets sidelined, perceived as something that could..."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Mutable CSI Node Allocatable Graduates to Beta",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/11\/kubernetes-v1-34-mutable-csi-node-allocatable-count\/",
+    "published":"2025-09-11",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":1.5,
+    "summary":"Kubernetes v1.34: Mutable CSI Node Allocatable Graduates to Beta <p>The <a href=\"https:\/\/kep.k8s.io\/4876\">functionality for CSI drivers to update information about attachable volume count on the nodes<\/a>, first introduced as Alpha in Kubernetes v1.33, has graduated to <strong>Beta<\/strong> in the Kubernetes v1.34 release! This marks a significant milestone in enhancing the accuracy of stateful pod scheduling by reducing failures due to outdated attachable volume capacity information.<\/p> <h2 id=\"background\">Background<\/h2> <p>Traditionally, Kubernetes <a href=\"https:\/\/kubernetes-csi.github.io\/docs\/introduction.html\">CSI drivers<\/a> report a static maximum volume attachment limit when initializing."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Avoiding Zombie Cluster Members When Upgrading to etcd v3.6",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/12\/21\/preventing-etcd-zombies\/",
+    "published":"2025-12-21",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":1.5,
+    "summary":"Avoiding Zombie Cluster Members When Upgrading to etcd v3.6 <p><em>This article is a mirror of an <a href=\"https:\/\/etcd.io\/blog\/2025\/zombie_members_upgrade\/\">original<\/a> that was recently published to the official etcd blog<\/em>. The <a href=\"https:\/\/etcd.io\/blog\/2025\/zombie_members_upgrade\/#key-takeaway\">key takeaway<\/a>?"
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"docker_security",
+    "source_name":"Docker Security Announcements",
+    "title":"Security | Docker Docs",
+    "url":"https:\/\/docs.docker.com\/engine\/security\/",
+    "published":null,
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":1.5,
+    "summary":"Security | Docker Docs Security | Docker Docs Get started Guides Manuals Reference Ask AI Start typing to search or try Ask AI . Back Manuals Get started Guides Reference Open source Docker Engine Install Ubuntu Debian RHEL Fedora Raspberry Pi OS (32-bit \/ armhf) CentOS SLES (s390x) Binaries Post-installation steps Storage Volumes Bind mounts tmpfs mounts Storage drivers Select a storage driver BTRFS storage driver Device Mapper storage driver (deprecated) OverlayFS storage driver VFS storage driver windowsfilter storage driver ZFS storage driver containerd image store Networking Docker with iptables Docker with nftables Packet filtering and firewalls Port publishing and mapping Network drivers Bridge network driver Host network driver IPvlan network driver Macvlan network driver None network driver Overlay network driver CA certificates Legacy container links Containers Start containers automatically Run multiple processes in a container Resource constraints Runtime metrics Running containers CLI Completion Proxy configuration Filter commands Format command and log output OpenTelemetry for the Docker CLI Daemon Start the daemon Use IPv6 networking Daemon proxy configuration Live restore Alternative container runtimes Collect Docker metrics with Prometheus Configure remote access for Docker daemon Read the daemon logs Troubleshooting the Docker daemon Manage resources Docker contexts Docker object labels Prune unused Docker objects Logs and metrics Configure logging drivers Customize log driver output Logging drivers Amazon CloudWatch Logs logging driver ETW logging driver Fluentd logging driver Google Cloud Logging driver Graylog Extended Format logging driver Journald logging driver JSON File logging driver Local file logging driver Splunk logging driver Syslog logging driver Use a logging driver plugin Use docker logs with remote logging drivers Security Rootless mode Tips Troubleshooting Antivirus software and Docker AppArmor security profiles for Docker Content trust in Docker Automation with content trust Delegations for content trust Deploy Notary Server with Compose Manage keys for content trust Play in a content trust sandbox Docker security non-events Isolate containers with a user namespace Protect the Docker daemon socket Seccomp security profiles for Docker Verify repository client with certificates Swarm mode Administer and maintain a swarm of Docker Engines Deploy a stack to a swarm Deploy services to a swarm Getting started with Swarm mode Create a swarm Add nodes to the swarm Deploy a service to the swarm Inspect a service on the swarm Scale the service in the swarm Delete the service running on the swarm Apply rolling updates to a service Drain a node on the swarm How swarm works How nodes work How services work Manage swarm security with public key infrastructure (PKI) Swarm task states Join nodes to a swarm Lock your swarm to protect its encryption key Manage nodes in a swarm Manage sensitive data with Docker secrets Manage swarm service networks Raft consensus in swarm mode Run Docker Engine in swarm mode Store configuration data using Docker Configs Swarm mode key concepts Use Swarm mode routing mesh Deprecated features Docker Engine plugins Access authorization plugin Docker log driver plugins Docker network driver plugins Docker Plugin API Docker volume plugins Plugin Config Version 1 of Plugin V2 Use Docker Engine plugins Release notes Engine v29 Engine v28 Engine v27 Engine v26.1 Engine v26.0 Engine v25.0 Engine v24.0 Engine v23.0 Engine v20.10 Engine v19.03 Engine v18.09 Engine v18.06 Engine v18.05 Engine v18.04 Engine v18.03 Engine v18.02 Engine v18.01 Engine v17.12 Engine v17.11 Engine v17.10 Engine v17.09 Engine v17.07 Engine v17.06 Engine v17.05 Engine v17.04 Engine v17.03 Prior releases Docker Build Core concepts Docker Build Overview Dockerfile overview Build context Building Multi-stage Variables Secrets Multi-platform Export binaries Container Device Interface (CDI) Best practices Base images Build checks New Build"
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Autoconfiguration for Node Cgroup Driver Goes GA",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/12\/kubernetes-v1-34-cri-cgroup-driver-lookup-now-ga\/",
+    "published":"2025-09-12",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":1.5,
+    "summary":"Kubernetes v1.34: Autoconfiguration for Node Cgroup Driver Goes GA <p>Historically, configuring the correct cgroup driver has been a pain point for users running new Kubernetes clusters. On Linux systems, there are two different cgroup drivers: <code>cgroupfs<\/code> and <code>systemd<\/code>."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Changes to Kubernetes Slack",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/06\/16\/changes-to-kubernetes-slack\/",
+    "published":"2025-06-16",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":1.5,
+    "summary":"Changes to Kubernetes Slack <p><strong>UPDATE<\/strong>: We’ve received notice from Salesforce that our Slack workspace <strong>WILL NOT BE DOWNGRADED<\/strong> on June 20th. Stand by for more details, but for now, there is no urgency to back up private channels or direct messages.<\/p> <p><del>Kubernetes Slack will lose its special status and will be changing into a standard free Slack on June 20, 2025<\/del>."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Use An Init Container To Define App Environment Variables",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/10\/kubernetes-v1-34-env-files\/",
+    "published":"2025-09-10",
+    "cves":[
+
+    ],
+    "severity_guess":"HIGH",
+    "risk_score_guess":1.5,
+    "summary":"Kubernetes v1.34: Use An Init Container To Define App Environment Variables <p>Kubernetes typically uses ConfigMaps and Secrets to set environment variables, which introduces additional API calls and complexity, For example, you need to separately manage the Pods of your workloads and their configurations, while ensuring orderly updates for both the configurations and the workload Pods.<\/p> <p>Alternatively, you might be using a vendor-supplied container that requires environment variables (such as a license key or a one-time token), but you don’t want to hard-code them or mount volumes just to get the job done.<\/p> <p>If that's the situation you are in, you now have a new (alpha) way to achieve that. Provided you have the <code>EnvFiles<\/code> <a href=\"https:\/\/kubernetes.io\/docs\/reference\/command-line-tools-reference\/feature-gates\/\">feature gate<\/a> enabled across your cluster, you can tell the kubelet to load a container's environment variables from a volume (the volume must be part of the Pod that the container belongs to)."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Pod Replacement Policy for Jobs Goes GA",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/05\/kubernetes-v1-34-pod-replacement-policy-for-jobs-goes-ga\/",
+    "published":"2025-09-05",
+    "cves":[
+
+    ],
+    "severity_guess":"HIGH",
+    "risk_score_guess":1.5,
+    "summary":"Kubernetes v1.34: Pod Replacement Policy for Jobs Goes GA <p>In Kubernetes v1.34, the <em>Pod replacement policy<\/em> feature has reached general availability (GA). This blog post describes the Pod replacement policy feature and how to use it in your Jobs.<\/p> <h2 id=\"about-pod-replacement-policy\">About Pod Replacement Policy<\/h2> <p>By default, the Job controller immediately recreates Pods as soon as they fail or begin terminating (when they have a deletion timestamp).<\/p> <p>As a result, while some Pods are terminating, the total number of running Pods for a Job can temporarily exceed the specified parallelism."
+  },
+  {
+    "ecosystem":"",
+    "source_id":"cncf_blog",
+    "source_name":"CNCF Blog",
+    "title":"Optimizing Kyverno CLI performance: My LFX mentorship journey",
+    "url":"https:\/\/www.cncf.io\/blog\/2025\/12\/10\/optimizing-kyverno-cli-performance-my-lfx-mentorship-journey\/",
+    "published":"2025-12-10",
+    "cves":[
+
+    ],
+    "severity_guess":"CRITICAL",
+    "risk_score_guess":1.5,
+    "summary":"Optimizing Kyverno CLI performance: My LFX mentorship journey Why Open Source? While exploring CNCF Projects in early 2025, I stumbled upon Kyverno and its community impressed me."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"cncf_blog",
+    "source_name":"CNCF Blog",
+    "title":"Kubernetes Security: 2025 Stable Features and 2026 preview",
+    "url":"https:\/\/www.cncf.io\/blog\/2025\/12\/15\/kubernetes-security-2025-stable-features-and-2026-preview\/",
+    "published":"2025-12-15",
+    "cves":[
+
+    ],
+    "severity_guess":"HIGH",
+    "risk_score_guess":1.5,
+    "summary":"Kubernetes Security: 2025 Stable Features and 2026 preview It’s time to recap the key Kubernetes security highlights from 2025 and outline features likely to graduate to stable in early 2026. From a DevSecOps perspective, 2025 brought several meaningful security improvements that directly influenced day-2... Mon, 15 Dec 2025 21:44:01 +0000"
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Introducing Headlamp AI Assistant",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/08\/07\/introducing-headlamp-ai-assistant\/",
+    "published":"2025-08-07",
+    "cves":[
+
+    ],
+    "severity_guess":"HIGH",
+    "risk_score_guess":1.5,
+    "summary":"Introducing Headlamp AI Assistant <p><em>This announcement originally <a href=\"https:\/\/headlamp.dev\/blog\/2025\/08\/07\/introducing-the-headlamp-ai-assistant\">appeared<\/a> on the Headlamp blog.<\/em><\/p> <p>To simplify Kubernetes management and troubleshooting, we're thrilled to introduce <a href=\"https:\/\/github.com\/headlamp-k8s\/plugins\/tree\/main\/ai-assistant#readme\">Headlamp AI Assistant<\/a>: a powerful new plugin for Headlamp that helps you understand and operate your Kubernetes clusters and applications with greater clarity and ease.<\/p> <p>Whether you're a seasoned engineer or just getting started, the AI Assistant offers:<\/p> <ul> <li><strong>Fast time to value:<\/strong> Ask questions like <em>&quot;Is my application healthy?&quot;<\/em> or <em>&quot;How can I fix this?&quot;<\/em> without needing deep Kubernetes knowledge.<\/li> <li><strong>Deep insights:<\/strong> Start with high-level queries and dig deeper with prompts like <em>&quot;List all the problematic pods&quot;<\/em> or <em>&quot;How can I fix this pod?&quot;<\/em><\/li> <li><strong>Focused &amp; relevant:<\/strong> Ask questions in the context of what you're viewing in the UI, such as <em>&quot;What's wrong here?&quot;<\/em><\/li> <li><strong>Action-oriented:<\/strong> Let the AI take action for you, like <em>&quot;Restart that deployment&quot;<\/em>, with your permission.<\/li> <\/ul> <p>Here is a demo of the AI Assistant in action as it helps troubleshoot an application running with issues in a Kubernetes cluster:<\/p> <div class=\"youtube-quote-sm\"> <iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" loading=\"eager\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https:\/\/www.youtube.com\/embed\/GzXkUuCTcd4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0\" title=\"Headlamp AI Assistant\" ><\/iframe> <\/div> <h2 id=\"hopping-on-the-ai-train\">Hopping on the AI train<\/h2> <p>Large Language Models (LLMs) have transformed not just how we access data but also how we interact with it. The rise of tools like ChatGPT opened a world of possibilities, inspiring a wave of new applications."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Post-Quantum Cryptography in Kubernetes",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/07\/18\/pqc-in-k8s\/",
+    "published":"2025-07-18",
+    "cves":[
+
+    ],
+    "severity_guess":"HIGH",
+    "risk_score_guess":1.5,
+    "summary":"Post-Quantum Cryptography in Kubernetes <p>The world of cryptography is on the cusp of a major shift with the advent of quantum computing. While powerful quantum computers are still largely theoretical for many applications, their potential to break current cryptographic standards is a serious concern, especially for long-lived systems."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"docker_blog",
+    "source_name":"Docker Blog",
+    "title":"From the Captain’s Chair: Igor Aleksandrov",
+    "url":"https:\/\/www.docker.com\/blog\/from-the-captains-chair-igor-aleksandrov\/",
+    "published":"2025-12-19",
+    "cves":[
+
+    ],
+    "severity_guess":"UNKNOWN",
+    "risk_score_guess":0.0,
+    "summary":"From the Captain’s Chair: Igor Aleksandrov Docker Captains are leaders from the developer community that are both experts in their field and are passionate about sharing their Docker knowledge with others. “From the Captain’s Chair” is a blog series where we get a closer look at one Captain to learn more about them and their experiences."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"docker_blog",
+    "source_name":"Docker Blog",
+    "title":"Develop and deploy voice AI apps using Docker",
+    "url":"https:\/\/www.docker.com\/blog\/develop-deploy-voice-ai-apps\/",
+    "published":"2025-12-16",
+    "cves":[
+
+    ],
+    "severity_guess":"UNKNOWN",
+    "risk_score_guess":0.0,
+    "summary":"Develop and deploy voice AI apps using Docker Voice is the next frontier of conversational AI. It is the most natural modality for people to chat and interact with another intelligent being."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"docker_blog",
+    "source_name":"Docker Blog",
+    "title":"A Safer Container Ecosystem with Docker: Free Docker Hardened Images",
+    "url":"https:\/\/www.docker.com\/blog\/docker-hardened-images-for-every-developer\/",
+    "published":"2025-12-17",
+    "cves":[
+
+    ],
+    "severity_guess":"LOW",
+    "risk_score_guess":0.0,
+    "summary":"A Safer Container Ecosystem with Docker: Free Docker Hardened Images Containers are the universal path to production for most developers, and Docker has always been the steward of the ecosystem. Docker Hub has over 20 billion monthly pulls, with nearly 90% of organizations now relying on containers in their software delivery workflows."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"docker_blog",
+    "source_name":"Docker Blog",
+    "title":"Docker Hardened Images: Security Independently Validated by SRLabs",
+    "url":"https:\/\/www.docker.com\/blog\/docker-hardened-images-security-independently-validated-by-srlabs\/",
+    "published":"2025-12-19",
+    "cves":[
+
+    ],
+    "severity_guess":"UNKNOWN",
+    "risk_score_guess":0.0,
+    "summary":"Docker Hardened Images: Security Independently Validated by SRLabs Earlier this week, we took a major step forward for the industry. Docker Hardened Images (DHI) is now available at no cost, bringing secure-by-default development to every team, everywhere."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"docker_blog",
+    "source_name":"Docker Blog",
+    "title":"Docker Model Runner now included with the Universal Blue family",
+    "url":"https:\/\/www.docker.com\/blog\/docker-model-runner-universal-blue\/",
+    "published":"2025-12-16",
+    "cves":[
+
+    ],
+    "severity_guess":"UNKNOWN",
+    "risk_score_guess":0.0,
+    "summary":"Docker Model Runner now included with the Universal Blue family Running large language models (LLMs) and other generative AI models can be a complex, frustrating process of managing dependencies, drivers, and environments. At Docker, we believe this should be as simple as docker model run."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Moving Volume Group Snapshots to v1beta2",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/16\/kubernetes-v1-34-volume-group-snapshot-beta-2\/",
+    "published":"2025-09-16",
+    "cves":[
+
+    ],
+    "severity_guess":"LOW",
+    "risk_score_guess":0.0,
+    "summary":"Kubernetes v1.34: Moving Volume Group Snapshots to v1beta2 <p>Volume group snapshots were <a href=\"https:\/\/kubernetes.io\/blog\/2023\/05\/08\/kubernetes-1-27-volume-group-snapshot-alpha\/\">introduced<\/a> as an Alpha feature with the Kubernetes 1.27 release and moved to <a href=\"https:\/\/kubernetes.io\/blog\/2024\/12\/18\/kubernetes-1-32-volume-group-snapshot-beta\/\">Beta<\/a> in the Kubernetes 1.32 release. The recent release of Kubernetes v1.34 moved that support to a second beta."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Kubernetes v1.34: Decoupled Taint Manager Is Now Stable",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/09\/15\/kubernetes-v1-34-decoupled-taint-manager-is-now-stable\/",
+    "published":"2025-09-15",
+    "cves":[
+
+    ],
+    "severity_guess":"UNKNOWN",
+    "risk_score_guess":0.0,
+    "summary":"Kubernetes v1.34: Decoupled Taint Manager Is Now Stable <p>This enhancement separates the responsibility of managing node lifecycle and pod eviction into two distinct components. Previously, the node lifecycle controller handled both marking nodes as unhealthy with NoExecute taints and evicting pods from them."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Ingress NGINX Retirement: What You Need to Know",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/11\/11\/ingress-nginx-retirement\/",
+    "published":"2025-11-11",
+    "cves":[
+
+    ],
+    "severity_guess":"UNKNOWN",
+    "risk_score_guess":0.0,
+    "summary":"Ingress NGINX Retirement: What You Need to Know <p>To prioritize the safety and security of the ecosystem, Kubernetes SIG Network and the Security Response Committee are announcing the upcoming retirement of <a href=\"https:\/\/github.com\/kubernetes\/ingress-nginx\/\">Ingress NGINX<\/a>. Best-effort maintenance will continue until March 2026."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"docker_blog",
+    "source_name":"Docker Blog",
+    "title":"How to Add MCP Servers to ChatGPT with Docker MCP Toolkit",
+    "url":"https:\/\/www.docker.com\/blog\/add-mcp-server-to-chatgpt\/",
+    "published":"2025-12-12",
+    "cves":[
+
+    ],
+    "severity_guess":"UNKNOWN",
+    "risk_score_guess":0.0,
+    "summary":"How to Add MCP Servers to ChatGPT with Docker MCP Toolkit ChatGPT is great at answering questions and generating code. But here's what it can't do: execute that code, query your actual database, create a GitHub repo with your project, or scrape live data from websites."
+  },
+  {
+    "ecosystem":"",
+    "source_id":"docker_blog",
+    "source_name":"Docker Blog",
+    "title":"Is AI the New Insider Threat?",
+    "url":"https:\/\/www.docker.com\/blog\/ai-insider-threat-shadow-ai-risk-controls\/",
+    "published":"2025-12-12",
+    "cves":[
+
+    ],
+    "severity_guess":"UNKNOWN",
+    "risk_score_guess":0.0,
+    "summary":"Is AI the New Insider Threat? Insider threats have always been difficult to manage because they blur the line between trusted access and risky behavior."
+  },
+  {
+    "ecosystem":"Kubernetes",
+    "source_id":"k8s_blog",
+    "source_name":"Kubernetes Blog",
+    "title":"Announcing the 2025 Steering Committee Election Results",
+    "url":"https:\/\/kubernetes.io\/blog\/2025\/11\/09\/steering-committee-results-2025\/",
+    "published":"2025-11-09",
+    "cves":[
+
+    ],
+    "severity_guess":"LOW",
+    "risk_score_guess":0.0,
+    "summary":"Announcing the 2025 Steering Committee Election Results <p>The <a href=\"https:\/\/github.com\/kubernetes\/community\/tree\/master\/elections\/steering\/2025\">2025 Steering Committee Election<\/a> is now complete. The Kubernetes Steering Committee consists of 7 seats, 4 of which were up for election in 2025."
+  },
+  {
+    "ecosystem":"Docker",
+    "source_id":"cncf_blog",
+    "source_name":"CNCF Blog",
+    "title":"The mentorship flywheel: How CNCF is growing the next generation of cloud native leaders",
+    "url":"https:\/\/www.cncf.io\/blog\/2025\/12\/18\/the-mentorship-flywheel-how-cncf-is-growing-the-next-generation-of-cloud-native-leaders\/",
+    "published":"2025-12-18",
+    "cves":[
+
+    ],
+    "severity_guess":"UNKNOWN",
+    "risk_score_guess":0.0,
+    "summary":"The mentorship flywheel: How CNCF is growing the next generation of cloud native leaders A record year for mentorship, 187 graduates contributing to the ecosystem, and one engineer&#8217;s journey from &#8220;I didn&#8217;t know about Docker&#8221; to Kyverno maintainer. In 2025, the CNCF mentorship programs hit a milestone: 187 successful mentorship... Thu, 18 Dec 2025 19:49:40 +0000"
+  }
+]

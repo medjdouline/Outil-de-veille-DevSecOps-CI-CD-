@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Rechercher - {{ super() }}{% endblock %}
+
+{% block content %}
+<div class="search-page">
+    <h2>Rechercher les vulnérabilités</h2>
+    
+    <form method="POST" class="search-form">
+        <div class="form-group">
+            <label for="severity">Sévérité :</label>
+            <select name="severity" id="severity">
+                <option value="">-- Toutes --</option>
+                <option value="CRITICAL">Critique</option>
+                <option value="HIGH">Haute</option>
+                <option value="MEDIUM">Moyenne</option>
+                <option value="LOW">Basse</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="component">Composant :</label>
+            <input type="text" name="component" id="component" placeholder="ex: Docker, Kubernetes">
+        </div>
+
+        <div class="form-group">
+            <label for="days">Découvert dans les X derniers jours :</label>
+            <input type="number" name="days" id="days" placeholder="30">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Rechercher</button>
+    </form>
+
+    {% if results %}
+    <div class="results">
+        <h3>{{ results|length }} résultats trouvés</h3>
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th>CVE ID</th>
+                    <th>Titre</th>
+                    <th>Sévérité</th>
+                    <th>Composant</th>
+                    <th>Score CVSS</th>
+                    <th>Lien</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for vuln in results %}
+                <tr>
+                    <td><strong>{{ vuln.cve_id }}</strong></td>
+                    <td>{{ vuln.title }}</td>
+                    <td><span class="severity-badge {{ vuln.severity|lower }}">{{ vuln.severity }}</span></td>
+                    <td>{{ vuln.affected_component }}</td>
+                    <td>{{ vuln.cvss_score }}</td>
+                    <td><a href="{{ vuln.url }}" target="_blank">Voir</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% elif request.method == 'POST' %}
+    <p class="no-results">Aucune vulnérabilité trouvée avec ces critères.</p>
+    {% endif %}
+</div>
+{% endblock %}

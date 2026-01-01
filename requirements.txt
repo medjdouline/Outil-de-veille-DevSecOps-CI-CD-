@@ -1,0 +1,40 @@
+# ===== WEB SCRAPING =====
+requests
+beautifulsoup4
+lxml
+feedparser
+
+# ===== ANALYSE DE DONNÉES =====
+pandas
+numpy
+
+# ===== FRAMEWORK WEB =====
+Flask
+Flask-SQLAlchemy
+
+# ===== BASE DE DONNÉES =====
+SQLAlchemy
+
+# ===== TRAITEMENT DE TEXTE =====
+nltk
+
+# ===== VISUALISATION & GRAPHIQUES =====
+matplotlib
+plotly
+
+# ===== GÉNÉRATION PDF =====
+fpdf2
+Pillow
+
+# ===== AUTOMATISATION =====
+schedule
+
+# ===== EMAILS =====
+python-dotenv
+
+# ===== OUTILS SUPPLÉMENTAIRES =====
+gunicorn
+python-dateutil
+scikit-learn
+seaborn
+

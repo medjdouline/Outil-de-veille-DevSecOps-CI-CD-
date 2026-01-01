@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Veille DevSecOps & CI/CD{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>Veille DevSecOps & CI/CD</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="/" class="nav-link">Accueil</a></li>
+                <li><a href="/search" class="nav-link">Rechercher</a></li>
+                <li><a href="/reports" class="nav-link">Rapports</a></li>
+                <li><a href="/admin" class="nav-link">Admin</a></li>
+				<li><a href="/alerts" class="nav-link">Alertes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Outil de Veille DevSecOps.</p>
+    </footer>
+
+    <!-- Chart.js pour les graphiques interactifs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
